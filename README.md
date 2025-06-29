@@ -13,7 +13,15 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 ## Project Structure
-app.py                    # Streamlit app
-models/transit_model.pkl # Trained model
-data/processed/           # CSVs with ward-level features and predictions
-geo/                      # GeoJSON of ward boundaries
+
+- `app.py`  
+  Streamlit app entry point.
+
+- `models/transit_model.pkl`  
+  Trained machine learning model used for ward classification.
+
+- `data/processed/`  
+  Contains processed CSV files with ward-level features and predicted coverage categories.
+
+- `geo/delhi_wards.geojson`  
+  GeoJSON file containing the spatial boundaries of Delhi wards for mapping.
