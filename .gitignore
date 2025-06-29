@@ -1,0 +1,35 @@
+# Ignore Python cache and virtual environment
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+cache/
+env/
+venv/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore large data directories, but allow necessary output files
+data/
+!data/processed/wards_with_predictions.csv
+
+# Ignore model outputs, logs, and temp files
+
+logs/
+*.log
+*.tmp
+*.bak
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore environment/config files
+.env
+*.env
+
+# Ignore VSCode or other editor folders
+.vscode/
+.idea/
